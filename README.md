@@ -21,8 +21,7 @@ Installing the userscript via Tampermonkey will automatically run it everytime y
 Fast and lightweight way to run the script, but requires a manual re-run each time the page is loaded.
 
 1. Go to the bookmark menu of your browser and add a new bookmark with the title of your choice.
-
-2. Copy the following snippet and paste it into the URL-Field: `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://ajhodges.github.io/pickem-dnd/pickem-dnd.user.js';})();`
+2. Copy the following snippet and paste it into the URL-Field: `javascript:(function(){javascript:(function(e,s){e.src=s;e.onload=function(){javascript:(function(e,s){e.src=s;e.onload=function(){document.body.appendChild(document.createElement('script')).src='https://ajhodges.github.io/pickem-dnd/pickem-dnd.user.js'};document.head.appendChild(e)})(document.createElement('script'),'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js')};document.head.appendChild(e)})(document.createElement('script'),'https://code.jquery.com/jquery-3.4.1.min.js')})();`
 
 3. Save the Bookmark.
 
@@ -35,12 +34,12 @@ If you don't want or can't install the previously mentioned browser extension, o
 1. On the Pick'em page, open your broser's developer console.
     * On Firefox, press `Ctrl` + `Shift` + `K`
     * On Chrome, press `Ctrl` + `Shift` + `J`
-    * On Safari, press `Ctrl` + `Alt` + `I`
+    * On Safari, press `Ctrl` + `Option` + `I`
     * On IE9+, press `F12`
     * On Opera, press `Ctrl` + `Shift` + `I`
     * If you are having trouble opening your console, try reading the in depth explanation [here](http://webmasters.stackexchange.com/questions/8525/how-to-open-the-javascript-console-in-different-browsers)
 
-2. Copy the following snippet and paste it into the developer console on the Pick'em page: `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://ajhodges.github.io/pickem-dnd/pickem-dnd.user.js';})();`
+2. Copy the following snippet and paste it into the developer console on the Pick'em page: `javascript:(function(){javascript:(function(e,s){e.src=s;e.onload=function(){javascript:(function(e,s){e.src=s;e.onload=function(){document.body.appendChild(document.createElement('script')).src='https://ajhodges.github.io/pickem-dnd/pickem-dnd.user.js'};document.head.appendChild(e)})(document.createElement('script'),'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js')};document.head.appendChild(e)})(document.createElement('script'),'https://code.jquery.com/jquery-3.4.1.min.js')})();`
 
 3. Press `Enter` to run the code.
 

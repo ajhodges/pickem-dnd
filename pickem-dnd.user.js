@@ -6,7 +6,7 @@
 // @author       ajhodges
 // @match        https://football.fantasysports.yahoo.com/*
 // @grant        none
-// @require http://code.jquery.com/jquery-3.4.1.min.js
+// @require https://code.jquery.com/jquery-3.4.1.min.js
 // @require https://code.jquery.com/ui/1.12.1/jquery-ui.min.js
 // ==/UserScript==
 
