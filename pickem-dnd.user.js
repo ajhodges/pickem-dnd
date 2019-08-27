@@ -8,6 +8,8 @@
 // @grant        none
 // @require https://code.jquery.com/jquery-3.4.1.min.js
 // @require https://code.jquery.com/ui/1.12.1/jquery-ui.min.js
+// @require https://cdn.jsdelivr.net/gh/furf/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js
+
 // ==/UserScript==
 
 /* jshint esversion: 6 */
