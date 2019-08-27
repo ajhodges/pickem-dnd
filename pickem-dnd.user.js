@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yahoo Pick'em Drag n' Drop
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  No more awful confidence points UI!
 // @author       ajhodges
 // @match        https://football.fantasysports.yahoo.com/*
