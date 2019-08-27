@@ -73,6 +73,18 @@ function addGlobalStyle(css) {
 
             // Set confidence dropdowns to read-only
             $("#ysf-picks-table tbody select").css("pointer-events","none");
+
+            // Enable save/cancel buttons (drag/drop doesn't mark 'select' fields as dirty)
+            YUI().use('node-event-simulate', function(Y) {
+                var sel = $("#ysf-picks-table tbody select").first();
+                var tmp = sel.val();
+                var node = Y.one("#" + sel.attr("id"));
+
+                //simulate a change event
+                node.simulate("change");
+
+                sel.val(tmp);
+            });
         },
         start : function(event, ui) {
             ui.item.data("start-pos", ui.item.index()+1);
