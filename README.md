@@ -43,7 +43,10 @@ If you don't want or can't install the previously mentioned browser extension, o
 
 3. Press `Enter` to run the code.
 
-## Update Log
+## Change Log
+
+Version 1.1 (2019/08/27)
+- Fixed bug where you couldn't save changes if the only changes were to confidence points
 
 Version 1.0 (2019/08/27)
 - Initial release with basic dnd functionality
