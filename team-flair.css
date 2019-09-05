@@ -1,0 +1,578 @@
+.flair-boston-college:before,
+a[href$="/boston-college"]:before {
+ background:0 -25px
+}
+.flair-clemson:before,
+a[href$="/clemson"]:before {
+ background:-35px -25px
+}
+.flair-duke:before,
+a[href$="/duke"]:before {
+ background:-70px -25px
+}
+.flair-florida-state:before,
+a[href$="/florida-state"]:before {
+ background:-105px -25px
+}
+.flair-georgia-tech:before,
+a[href$="/georgia-tech"]:before {
+ background:-140px -25px
+}
+.flair-louisville:before,
+a[href$="/louisville"]:before {
+ background:-175px -25px
+}
+.flair-miami-fl:before,
+a[href$="/miami-fl"]:before,
+a[href="#f/u"]:before {
+ background:-210px -25px
+}
+.flair-north-carolina-state:before,
+a[href$="/north-carolina-state"]:before {
+ background:-245px -25px
+}
+.flair-north-carolina:before,
+a[href$="/north-carolina"]:before {
+ background:-280px -25px
+}
+.flair-pittsburgh:before,
+a[href$="/pittsburgh"]:before {
+ background:-315px -25px
+}
+.flair-syracuse:before,
+a[href$="/syracuse"]:before,
+a[href="#f/s"]:before {
+ background:-350px -25px
+}
+.flair-virginia:before,
+a[href$="/virginia"]:before {
+ background:-385px -25px
+}
+.flair-virginia-tech:before,
+a[href$="/virginia-tech"]:before {
+ background:-420px -25px
+}
+.flair-wake-forest:before,
+a[href$="/wake-forest"]:before {
+ background:-455px -25px
+}
+.flair-baylor:before,
+a[href$="/baylor"]:before {
+ background:0 -50px
+}
+.flair-iowa-state:before,
+a[href$="/iowa-state"]:before {
+ background:-35px -50px
+}
+.flair-kansas:before,
+a[href$="/kansas"]:before {
+ background:-70px -50px
+}
+.flair-kansas-state:before,
+a[href$="/kansas-state"]:before {
+ background:-105px -50px
+}
+.flair-oklahoma:before,
+a[href$="/oklahoma"]:before {
+ background:-140px -50px
+}
+.flair-oklahoma-state:before,
+a[href$="/oklahoma-state"]:before {
+ background:-175px -50px
+}
+.flair-texas-christian:before,
+a[href$="/texas-christian"]:before {
+ background:-210px -50px
+}
+.flair-texas:before,
+a[href$="/texas"]:before {
+ background:-245px -50px
+}
+.flair-texas-tech:before,
+a[href$="/texas-tech"]:before {
+ background:-280px -50px
+}
+.flair-west-virginia:before,
+a[href$="/west-virginia"]:before {
+ background:-315px -50px
+}
+.flair-illinois:before,
+a[href$="/illinois"]:before,
+a[href="#f/i"]:before {
+ background:0 -75px
+}
+.flair-indiana:before,
+a[href$="/indiana"]:before {
+ background:-35px -75px
+}
+.flair-iowa:before,
+a[href$="/iowa"]:before {
+ background:-70px -75px
+}
+.flair-maryland:before,
+a[href$="/maryland"]:before {
+ background:-105px -75px
+}
+.flair-michigan:before,
+a[href$="/michigan"]:before {
+ background:-140px -75px
+}
+.flair-michigan-state:before,
+a[href$="/michigan-state"]:before {
+ background:-175px -75px
+}
+.flair-minnesota:before,
+a[href$="/minnesota"]:before {
+ background:-210px -75px
+}
+.flair-nebraska:before,
+a[href$="/nebraska"]:before {
+ background:-245px -75px
+}
+.flair-northwestern:before,
+a[href$="/northwestern"]:before,
+a[href="#f/n"]:before {
+ background:-280px -75px
+}
+.flair-ohio-state:before,
+a[href$="/ohio-state"]:before,
+a[href="#f/o"]:before {
+ background:-315px -75px
+}
+.flair-penn-state:before,
+a[href$="/penn-state"]:before {
+ background:-350px -75px
+}
+.flair-purdue:before,
+a[href$="/purdue"]:before,
+a[href="#f/p"]:before {
+ background:-385px -75px
+}
+.flair-rutgers:before,
+a[href$="/rutgers"]:before {
+ background:-420px -75px
+}
+.flair-wisconsin:before,
+a[href$="/wisconsin"]:before {
+ background:-455px -75px
+}
+.flair-arizona:before,
+a[href$="/arizona"]:before {
+ background:0 -100px
+}
+.flair-arizona-state:before,
+a[href$="/arizona-state"]:before {
+ background:-35px -100px
+}
+.flair-california:before,
+a[href$="/california"]:before {
+ background:-70px -100px
+}
+.flair-colorado:before,
+a[href$="/colorado"]:before {
+ background:-105px -100px
+}
+.flair-oregon:before,
+a[href$="/oregon"]:before {
+ background:-140px -100px
+}
+.flair-oregon-state:before,
+a[href$="/oregon-state"]:before {
+ background:-175px -100px
+}
+.flair-stanford:before,
+a[href$="/stanford"]:before {
+ background:-210px -100px
+}
+.flair-ucla:before,
+a[href$="/ucla"]:before {
+ background:-245px -100px
+}
+.flair-southern-california:before,
+a[href$="/southern-california"]:before {
+ background:-280px -100px
+}
+.flair-utah:before,
+a[href$="/utah"]:before {
+ background:-315px -100px
+}
+.flair-washington:before,
+a[href$="/washington"]:before,
+a[href="#f/w"]:before {
+ background:-350px -100px
+}
+.flair-washington-state:before,
+a[href$="/washington-state"]:before {
+ background:-385px -100px
+}
+.flair-alabama:before,
+a[href$="/alabama"]:before,
+a[href="#f/a"]:before {
+ background:0 -125px
+}
+.flair-arkansas:before,
+a[href$="/arkansas"]:before {
+ background:-35px -125px
+}
+.flair-auburn:before,
+a[href$="/auburn"]:before {
+ background:-70px -125px
+}
+.flair-florida:before,
+a[href$="/florida"]:before {
+ background:-105px -125px
+}
+.flair-georgia:before,
+a[href$="/georgia"]:before,
+a[href="#f/g"]:before {
+ background:-140px -125px
+}
+.flair-kentucky:before,
+a[href$="/kentucky"]:before {
+ background:-175px -125px
+}
+.flair-lsu:before,
+a[href$="/lsu"]:before {
+ background:-210px -125px
+}
+.flair-mississippi-state:before,
+a[href$="/mississippi-state"]:before {
+ background:-245px -125px
+}
+.flair-missouri:before,
+a[href$="/missouri"]:before {
+ background:-280px -125px
+}
+.flair-olemiss:before,
+a[href$="/olemiss"]:before {
+ background:-315px -125px
+}
+.flair-south-carolina:before,
+a[href$="/south-carolina"]:before {
+ background:-350px -125px
+}
+.flair-tennessee:before,
+a[href$="/tennessee"]:before,
+a[href="#f/t"]:before {
+ background:-385px -125px
+}
+.flair-texas-am:before,
+a[href$="/texas-am"]:before {
+ background:-420px -125px
+}
+.flair-vanderbilt:before,
+a[href$="/vanderbilt"]:before {
+ background:-455px -125px
+}
+.flair-army:before,
+a[href$="/army"]:before {
+ background:0 -150px
+}
+.flair-byu:before,
+a[href$="/byu"]:before {
+ background:-35px -150px
+}
+.flair-liberty:before,
+a[href$="/liberty"]:before {
+ background:-70px -150px
+}
+.flair-new-mexico-state:before,
+a[href$="/new-mexico-state"]:before {
+ background:-105px -150px
+}
+.flair-notre-dame:before,
+a[href$="/notre-dame"]:before {
+ background:-140px -150px
+}
+.flair-massachusetts:before,
+a[href$="/massachusetts"]:before {
+ background:-175px -150px
+}
+.flair-cincinnati:before,
+a[href$="/cincinnati"]:before {
+ background:0 -175px
+}
+.flair-connecticut:before,
+a[href$="/connecticut"]:before {
+ background:-35px -175px
+}
+.flair-east-carolina:before,
+a[href$="/east-carolina"]:before {
+ background:-70px -175px
+}
+.flair-houston:before,
+a[href$="/houston"]:before {
+ background:-105px -175px
+}
+.flair-memphis:before,
+a[href$="/memphis"]:before {
+ background:-140px -175px
+}
+.flair-navy:before,
+a[href$="/navy"]:before {
+ background:-175px -175px
+}
+.flair-southern-methodist:before,
+a[href$="/southern-methodist"]:before {
+ background:-210px -175px
+}
+.flair-temple:before,
+a[href$="/temple"]:before {
+ background:-245px -175px
+}
+.flair-tulane:before,
+a[href$="/tulane"]:before {
+ background:-280px -175px
+}
+.flair-tulsa:before,
+a[href$="/tulsa"]:before {
+ background:-315px -175px
+}
+.flair-central-florida:before,
+a[href$="/central-florida"]:before {
+ background:-350px -175px
+}
+.flair-south-florida:before,
+a[href$="/south-florida"]:before {
+ background:-385px -175px
+}
+.flair-charlotte:before,
+a[href$="/charlotte"]:before {
+ background:0 -200px
+}
+.flair-florida-atlantic:before,
+a[href$="/florida-atlantic"]:before {
+ background:-35px -200px
+}
+.flair-florida-international:before,
+a[href$="/florida-international"]:before {
+ background:-70px -200px
+}
+.flair-louisiana-tech:before,
+a[href$="/louisiana-tech"]:before {
+ background:-105px -200px
+}
+.flair-marshall:before,
+a[href$="/marshall"]:before {
+ background:-140px -200px
+}
+.flair-middle-tennessee-state:before,
+a[href$="/middle-tennessee-state"]:before {
+ background:-175px -200px
+}
+.flair-north-texas:before,
+a[href$="/north-texas"]:before {
+ background:-210px -200px
+}
+.flair-old-dominion:before,
+a[href$="/old-dominion"]:before {
+ background:-245px -200px
+}
+.flair-rice:before,
+a[href$="/rice"]:before,
+a[href="#f/r"]:before {
+ background:-280px -200px
+}
+.flair-southern-mississippi:before,
+a[href$="/southern-mississippi"]:before {
+ background:-315px -200px
+}
+.flair-alabama-birmingham:before,
+a[href$="/alabama-birmingham"]:before {
+ background:-350px -200px
+}
+.flair-texas-el-paso:before,
+a[href$="/texas-el-paso"]:before {
+ background:-385px -200px
+}
+.flair-texas-san-antonio:before,
+a[href$="/texas-san-antonio"]:before {
+ background:-420px -200px
+}
+.flair-western-kentucky:before,
+a[href$="/western-kentucky"]:before {
+ background:-455px -200px
+}
+.flair-akron:before,
+a[href$="/akron"]:before,
+a[href="#f/z"]:before {
+ background:0 -225px
+}
+.flair-ball-state:before,
+a[href$="/ball-state"]:before {
+ background:-35px -225px
+}
+.flair-bowling-green-state:before,
+a[href$="/bowling-green-state"]:before {
+ background:-70px -225px
+}
+.flair-buffalo:before,
+a[href$="/buffalo"]:before {
+ background:-105px -225px
+}
+.flair-central-michigan:before,
+a[href$="/central-michigan"]:before {
+ background:-140px -225px
+}
+.flair-eastern-michigan:before,
+a[href$="/eastern-michigan"]:before,
+a[href="#f/e"]:before {
+ background:-175px -225px
+}
+.flair-kent-state:before,
+a[href$="/kent-state"]:before {
+ background:-210px -225px
+}
+.flair-miami-oh:before,
+a[href$="/miami-oh"]:before {
+ background:-245px -225px
+}
+.flair-northern-illinois:before,
+a[href$="/northern-illinois"]:before {
+ background:-280px -225px
+}
+.flair-ohio:before,
+a[href$="/ohio"]:before {
+ background:-315px -225px
+}
+.flair-toledo:before,
+a[href$="/toledo"]:before {
+ background:-350px -225px
+}
+.flair-western-michigan:before,
+a[href$="/western-michigan"]:before {
+ background:-385px -225px
+}
+.flair-air-force:before,
+a[href$="/air-force"]:before {
+ background:0 -250px
+}
+.flair-boise-state:before,
+a[href$="/boise-state"]:before {
+ background:-35px -250px
+}
+.flair-colorado-state:before,
+a[href$="/colorado-state"]:before {
+ background:-70px -250px
+}
+.flair-fresno-state:before,
+a[href$="/fresno-state"]:before {
+ background:-105px -250px
+}
+.flair-hawaii:before,
+a[href$="/hawaii"]:before,
+a[href="#f/h"]:before {
+ background:-140px -250px
+}
+.flair-nevada:before,
+a[href$="/nevada"]:before {
+ background:-175px -250px
+}
+.flair-new-mexico:before,
+a[href$="/new-mexico"]:before {
+ background:-210px -250px
+}
+.flair-san-diego-state:before,
+a[href$="/san-diego-state"]:before {
+ background:-245px -250px
+}
+.flair-san-jose-state:before,
+a[href$="/san-jose-state"]:before {
+ background:-280px -250px
+}
+.flair-nevada-las-vegas:before,
+a[href$="/nevada-las-vegas"]:before {
+ background:-315px -250px
+}
+.flair-utah-state:before,
+a[href$="/utah-state"]:before {
+ background:-350px -250px
+}
+.flair-wyoming:before,
+a[href$="/wyoming"]:before {
+ background:-385px -250px
+}
+.flair-appalachian-state:before,
+a[href$="/appalachian-state"]:before {
+ background:0 -275px
+}
+.flair-arkansas-state:before,
+a[href$="/arkansas-state"]:before {
+ background:-35px -275px
+}
+.flair-coastal-carolina:before,
+a[href$="/coastal-carolina"]:before {
+ background:-70px -275px
+}
+.flair-georgia-southern:before,
+a[href$="/georgia-southern"]:before {
+ background:-105px -275px
+}
+.flair-georgia-state:before,
+a[href$="/georgia-state"]:before {
+ background:-140px -275px
+}
+.flair-louisiana-lafayette:before,
+a[href$="/louisiana-lafayette"]:before {
+ background:-175px -275px
+}
+.flair-south-alabama:before,
+a[href$="/south-alabama"]:before {
+ background:-210px -275px
+}
+.flair-texas-state:before,
+a[href$="/texas-state"]:before {
+ background:-245px -275px
+}
+.flair-troy:before,
+a[href$="/troy"]:before {
+ background:-280px -275px
+}
+.flair-louisiana-monroe:before,
+a[href$="/louisiana-monroe"]:before {
+ background:-315px -275px
+}
+
+.flair,
+ a[href^="#f"] {
+  padding:0;
+  border:0;
+  border-radius:0;
+  vertical-align:middle;
+  display:inline-block;
+  color:transparent;
+  height:20px;
+  margin:0
+ }
+ .flair {
+  width:0;
+  background:transparent
+ }
+ a[href^="#f"] {
+  background:transparent;
+  width:30px;
+  font-size:3px
+ }
+ .flair:before,
+ .flair:after,
+ a[href^="#f"]:before {
+  width:30px
+ }
+ .flair,
+ .link .flair {
+  position:absolute;
+  width:auto;
+  background:transparent
+ }
+ 
+.flair:before,
+.flair:after,
+a[href^="#f"]:before {
+ content:"";
+ background-image:url("//a.thumbs.redditmedia.com/SOG20thdrO5u3VFMIS1n2rPo6ieAuIRbJOKHE2Yoas8.png");
+ height:20px;
+ position:absolute;
+ color:transparent;
+ background-size:840px auto!important
+}
+ 
