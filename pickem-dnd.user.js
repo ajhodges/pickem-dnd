@@ -45,6 +45,15 @@ function addGlobalStyle(css) {
     font-family: "yahoo";
     }`);
 
+    // Add team icons
+    $("td.favorite, td.underdog").each(function(i){
+        var teamName = $(this).find("a").attr("href").split("/")[5];
+        // if (teamName in TEAM_MAP) {
+        //     teamName = TEAM_MAP[teamName];
+        // }
+        $(this).prepend("<a href=\"#f/" + teamName + "\"></a>");
+    });
+
     var numGames = $("#ysf-picks-table tbody tr").length;
 
     $("#ysf-picks-table tbody").sortable({
