@@ -23,6 +23,7 @@ var YAHOO_TO_SPORTSREFERENCE_MAP = {
     "boston-coll": "boston-college",
     "florida-st": "florida-state",
     "nc-state": "north-carolina-state",
+    "n-carolina": "north-carolina",
     "miami-(fl)": "miami-fl",
     "iowa-st": "iowa-state",
     "kansas-st": "kansas-state",
