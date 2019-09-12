@@ -45,6 +45,9 @@ If you don't want or can't install the previously mentioned browser extension, o
 
 ## Change Log
 
+Version 1.2 (2019/09/12)
+- Added team logos to the pick'em
+
 Version 1.1 (2019/08/27)
 - Fixed bug where you couldn't save changes if the only changes were to confidence points
 

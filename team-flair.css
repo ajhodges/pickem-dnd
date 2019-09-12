@@ -542,7 +542,9 @@ a[href$="/louisiana-monroe"]:before {
   display:inline-block;
   color:transparent;
   height:20px;
-  margin:0
+  margin:0;
+  pointer-events: none;
+  cursor: default;
  }
  .flair {
   width:0;
@@ -573,6 +575,6 @@ a[href^="#f"]:before {
  height:20px;
  position:absolute;
  color:transparent;
- background-size:840px auto!important
+ background-size:840px auto!important;
 }
  
