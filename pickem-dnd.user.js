@@ -15,6 +15,59 @@
 /* jshint esversion: 6 */
 /* globals $:false */
 
+
+//Team flair https://jsfiddle.net/w15mtj0b/9/
+var YAHOO_TO_SPORTSREFERENCE_MAP = {
+    "ucf": "central-florida",
+    "smu": "southern-methodist",
+    "boston-coll": "boston-college",
+    "florida-st": "florida-state",
+    "nc-state": "north-carolina-state",
+    "miami-(fl)": "miami-fl",
+    "iowa-st": "iowa-state",
+    "kansas-st": "kansas-state",
+    "oklahoma-st": "oklahoma-state",
+    "tcu": "texas-christian",
+    "michigan-st": "michigan-state",
+    "ohio-st": "ohio-state",
+    "penn-st": "penn-state",
+    "florida-intl": "florida-international",
+    "middle-tenn-st": "middle-tennessee-state",
+    "w-kentucky": "western-kentucky",
+    "southern-miss": "southern-mississippi",
+    "uab": "alabama-birmingham",
+    "utep": "texas-el-paso",
+    "utsa": "texas-san-antonio",
+    "umass": "massachusetts",
+    "n-mex-st": "new-mexico-state",
+    "kent-st": "kent-state",
+    "miami-(oh)": "miami-oh",
+    "ball-st": "ball-state",
+    "cent-michigan": "central-michigan",
+    "east-michigan": "eastern-michigan",
+    "w-michigan": "western-michigan",
+    "fresno-st": "fresno-state",
+    "s-diego-st": "san-diego-state",
+    "san-jose-st": "san-jose-state",
+    "unlv": "nevada-las-vegas",
+    "boise-st": "boise-state",
+    "colorado-st": "colorado-state",
+    "utah-st": "utah-state",
+    "oregon-st": "oregon-state",
+    "washington-st": "washington-state",
+    "arizona-st": "arizona-state",
+    "usc": "southern-california",
+    "mississippi-st": "mississippi-state",
+    "appalachian-st": "appalachian-state",
+    "coastal-car": "coastal-carolina",
+    "georgia-st": "georgia-state",
+    "arkansas-st": "arkansas-state",
+    "la-lafayette": "louisiana-lafayette",
+    "la-monroe": "louisiana-monroe",
+    "texas-st": "texas-state"
+}
+
+
 function addGlobalStyle(css) {
     var head;
     var style;
@@ -28,6 +81,16 @@ function addGlobalStyle(css) {
 
 (function() {
     "use strict";
+
+    // Add style for logos
+    $('<link/>', {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://ajhodges.github.io/pickem-dnd/team-flair.css'
+    }).appendTo('head')
+    addGlobalStyle(`tr td.favorite a {
+    text-align:                     left;
+    }`);
 
     // Add style for placeholder (hover element)
     addGlobalStyle(`.dnd-placeholder {
@@ -48,10 +111,14 @@ function addGlobalStyle(css) {
     // Add team icons
     $("td.favorite, td.underdog").each(function(i){
         var teamName = $(this).find("a").attr("href").split("/")[5];
-        // if (teamName in TEAM_MAP) {
-        //     teamName = TEAM_MAP[teamName];
-        // }
-        $(this).prepend("<a href=\"#f/" + teamName + "\"></a>");
+        if (teamName in YAHOO_TO_SPORTSREFERENCE_MAP) {
+            teamName = YAHOO_TO_SPORTSREFERENCE_MAP[teamName];
+        }
+        if ($(this).hasClass('favorite')) {
+            $(this).find("a").after("<a href=\"#f/" + teamName + "\" rel=\"nofollow\"></a>");
+        } else {
+            $(this).prepend("<a href=\"#f/" + teamName + "\" rel=\"nofollow\"></a>");
+        }
     });
 
     var numGames = $("#ysf-picks-table tbody tr").length;

@@ -542,7 +542,9 @@ a[href$="/louisiana-monroe"]:before {
   display:inline-block;
   color:transparent;
   height:20px;
-  margin:0
+  margin:0;
+  pointer-events: none;
+  cursor: default;
  }
  .flair {
   width:0;
@@ -569,10 +571,10 @@ a[href$="/louisiana-monroe"]:before {
 .flair:after,
 a[href^="#f"]:before {
  content:"";
- background-image:url("//a.thumbs.redditmedia.com/SOG20thdrO5u3VFMIS1n2rPo6ieAuIRbJOKHE2Yoas8.png");
+ background-image:url("https://a.thumbs.redditmedia.com/SOG20thdrO5u3VFMIS1n2rPo6ieAuIRbJOKHE2Yoas8.png");
  height:20px;
  position:absolute;
  color:transparent;
- background-size:840px auto!important
+ background-size:840px auto!important;
 }
  
