@@ -58,6 +58,7 @@ var YAHOO_TO_SPORTSREFERENCE_MAP = {
     "washington-st": "washington-state",
     "arizona-st": "arizona-state",
     "usc": "southern-california",
+    "mississippi": "olemiss",
     "mississippi-st": "mississippi-state",
     "appalachian-st": "appalachian-state",
     "coastal-car": "coastal-carolina",
