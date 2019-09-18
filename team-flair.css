@@ -231,8 +231,8 @@ a[href="#f/g"]:before {
 a[href$="/kentucky"]:before {
  background:-175px -125px
 }
-.flair-lsu:before,
-a[href$="/lsu"]:before {
+.flair-louisiana-state:before,
+a[href$="/louisiana-state"]:before {
  background:-210px -125px
 }
 .flair-mississippi-state:before,
@@ -243,8 +243,8 @@ a[href$="/mississippi-state"]:before {
 a[href$="/missouri"]:before {
  background:-280px -125px
 }
-.flair-olemiss:before,
-a[href$="/olemiss"]:before {
+.flair-mississippi:before,
+a[href$="/mississippi"]:before {
  background:-315px -125px
 }
 .flair-south-carolina:before,
@@ -268,8 +268,8 @@ a[href$="/vanderbilt"]:before {
 a[href$="/army"]:before {
  background:0 -150px
 }
-.flair-byu:before,
-a[href$="/byu"]:before {
+.flair-brigham-young:before,
+a[href$="/brigham-young"]:before {
  background:-35px -150px
 }
 .flair-liberty:before,
