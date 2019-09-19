@@ -58,7 +58,6 @@ var YAHOO_TO_SPORTSREFERENCE_MAP = {
     "washington-st": "washington-state",
     "arizona-st": "arizona-state",
     "usc": "southern-california",
-    "mississippi": "olemiss",
     "mississippi-st": "mississippi-state",
     "appalachian-st": "appalachian-state",
     "coastal-car": "coastal-carolina",
@@ -66,7 +65,9 @@ var YAHOO_TO_SPORTSREFERENCE_MAP = {
     "arkansas-st": "arkansas-state",
     "la-lafayette": "louisiana-lafayette",
     "la-monroe": "louisiana-monroe",
-    "texas-st": "texas-state"
+    "lsu": "louisiana-state",
+    "texas-st": "texas-state",
+    "byu": "brigham-young"
 }
 
 
@@ -81,6 +82,15 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
+function humanize(str) {
+    var frags = str.split('_');
+    for (i=0; i<frags.length; i++) {
+        frags[i] = frags[i].charAt(0).toUpperCase() + frags[i].slice(1);
+    }
+    return frags.join(' ');
+}
+  
+
 (function() {
     "use strict";
 
@@ -92,6 +102,9 @@ function addGlobalStyle(css) {
     }).appendTo('head')
     addGlobalStyle(`tr td.favorite a {
     text-align:                     left;
+    }`);
+    addGlobalStyle(`#bd {
+    width: 1055px;
     }`);
 
     // Add style for placeholder (hover element)
@@ -110,6 +123,11 @@ function addGlobalStyle(css) {
     font-family: "yahoo";
     }`);
 
+    //Matchup info styling
+    addGlobalStyle(`.ysf-matchup-dist .ft table td, .ysf-matchup-dist .ft table th {
+    width: auto;
+    }`);
+
     // Add team icons
     $("td.favorite, td.underdog").each(function(i){
         var teamName = $(this).find("a").attr("href").split("/")[5];
@@ -121,6 +139,59 @@ function addGlobalStyle(css) {
         } else {
             $(this).prepend("<a href=\"#f/" + teamName + "\" rel=\"nofollow\"></a>");
         }
+    });
+
+    // Add custom data to matchup
+    $(".info a").click(function(ev){
+        var gameUrl = new URLSearchParams($(this).attr("href").substring(23));
+        var gid = gameUrl.get("game_id")
+
+        // Wait for the YUI click event to be processed and the picksnote div to be created
+        setTimeout(function(){
+            var picksNote = $("#ysf-picksnote-info-gid-" + gid);
+
+            var favorite = picksNote.find("dl.favorite a").attr("href").split("/")[5];
+            if (favorite in YAHOO_TO_SPORTSREFERENCE_MAP) {
+                favorite = YAHOO_TO_SPORTSREFERENCE_MAP[favorite];
+            }
+
+            var underdog = picksNote.find("dl.underdog a").attr("href").split("/")[5];
+            if (underdog in YAHOO_TO_SPORTSREFERENCE_MAP) {
+                underdog = YAHOO_TO_SPORTSREFERENCE_MAP[underdog];
+            }
+
+            var statsTbody = picksNote.find(".ft tbody");
+            if (statsTbody.find("tr").length == 3) {
+                $.get("https://o6npybv86j.execute-api.us-east-1.amazonaws.com/dev/ncaaf/teams/" + favorite, function(favData){
+                    $.get("https://o6npybv86j.execute-api.us-east-1.amazonaws.com/dev/ncaaf/teams/" + underdog, function(udData){
+                        var statsTbody = picksNote.find(".ft tbody");
+    
+                        var statsToShow = ['points',  'avg_yards', 'avg_passing_yards', 'avg_rushing_yards', 'avg_num_plays']
+                        $.each(statsToShow, function(i, key){
+                            var statsRow = "<tr>"
+                            statsRow += "<td>" + favData[key] + "</td>";
+                            statsRow += "<td class=\"label\">(Off.) " + humanize(key) + " (Def.)</td>";
+                            statsRow += "<td>" + udData[key + "_allowed"] + "</td>";
+                            statsRow += "</tr>";
+                            statsTbody.append(statsRow);
+
+                            statsRow = "<tr>"
+                            statsRow += "<td>" + favData[key + "_allowed"] + "</td>";
+                            statsRow += "<td class=\"label\">(Def.) " + humanize(key) + " (Off.)</td>";
+                            statsRow += "<td>" + udData[key] + "</td>";
+                            statsRow += "</tr>";
+                            statsTbody.append(statsRow);
+                        })
+                        var statsRow = "<tr>"
+                        statsRow += "<td>" + favData['strength_of_schedule'] + "</td>";
+                        statsRow += "<td class=\"label\">" + humanize('strength_of_schedule') + "</td>";
+                        statsRow += "<td>" + udData['strength_of_schedule'] + "</td>";
+                        statsRow += "</tr>";
+                        statsTbody.append(statsRow);
+                    });
+                });
+            }
+        }, 1000);
     });
 
     var numGames = $("#ysf-picks-table tbody tr").length;

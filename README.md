@@ -45,6 +45,9 @@ If you don't want or can't install the previously mentioned browser extension, o
 
 ## Change Log
 
+Version 1.3 (2019/09/18)
+- Added offensive/defensive team stats to matchup modal
+
 Version 1.2 (2019/09/12)
 - Added team logos to the pick'em
 
